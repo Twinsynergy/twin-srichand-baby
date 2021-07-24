@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Layout } from "@/components/container";
-import { Jumbotron, PageHeadings, HeadSeo, Tabs } from "@/components/commons";
+import { PageTitle, FeatureTitleSection, HeadSeo, Tabs } from "@/components/commons";
 import { ExcelPage } from "@/components/views";
 
 import { customer } from "../../mock/customer";
@@ -28,7 +28,7 @@ const WhereToBuy = () => {
   });
 
   return (
-    <Fragment>
+    <>
       <HeadSeo
         siteTitle="Where to buy"
         desc="สั่งซื้อซื้อสินค้าได้ที่ไหนบ้าง"
@@ -36,10 +36,10 @@ const WhereToBuy = () => {
         siteUrl="https://srichandbaby.com/where-to-buy"
       />
       <Layout>
-        <Jumbotron className="pt-20 md:pt-36" />
+        <PageTitle className="pt-20 md:pt-36" />
         <section className="section section-where-to-buy pb-24">
           <div className="container mx-auto px-5">
-            <PageHeadings align="center" title="สั่งซื้อออนไลน์ได้ที่" />
+            <FeatureTitleSection align="center" title="สั่งซื้อออนไลน์ได้ที่" />
             <div className="text-gray-600 body-font md:px-5 mx-auto">
               <div className="flex flex-wrap -m-4">
                 <div className="p-4 md:w-1/3">
@@ -152,7 +152,7 @@ const WhereToBuy = () => {
           </div>
         </section>
       </Layout>
-    </Fragment>
+    </>
   );
 };
 

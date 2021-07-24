@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Layout } from "@/components/container";
 import {
+  HomeSlider,
   HomeConcept,
   HomeIngredients,
   HomeInfoBrandCarousel,
   HomeReview
 } from "@/components/views";
 import { HeadSeo } from "@/components/commons";
-import SliderItem from "@/components/SliderItem";
 import { getAllContentFromSlide } from "../utils/storyblok";
 
 const slideCustomer = [
@@ -105,7 +105,7 @@ export default function Home(props) {
         siteUrl="https://srichandbaby.com/"
       />
       <Layout title="ศรีจันทร์ เบบี้" desc="" imgSrc="" metaUrl="" keyWords="" author="">
-        {story && <SliderItem blok={story} />}
+        {story && <HomeSlider blok={story} />}
         <HomeConcept />
         <HomeIngredients slideValue={slideIngredients} />
         <HomeInfoBrandCarousel slideValues={brand} />

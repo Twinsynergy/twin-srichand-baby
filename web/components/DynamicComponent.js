@@ -4,9 +4,10 @@ import Feature from "./Feature";
 import Placeholder from "./Placeholder";
 import FeaturedPosts from "./FeaturedPosts";
 import Page from "./Page";
-import BlogPost from "./BlogPost";
+import { SinglePost } from "./views";
 import PostsList from "./PostsList";
 import SliderItem from "./Slider";
+import ProductBlockImage from "./ProductBlockImage";
 
 // resolve Storyblok components to Next.js components
 const Components = {
@@ -17,7 +18,8 @@ const Components = {
   "slider-item": SliderItem,
   "featured-posts": FeaturedPosts,
   page: Page,
-  post: BlogPost,
+  post: SinglePost,
+  images: ProductBlockImage,
   "selected-posts": PostsList
 };
 

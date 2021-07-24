@@ -32,7 +32,9 @@ module.exports = {
         black: "#000",
         white: "#fff",
         placeholder: "#B5B5C3",
-        primary: "#ea6077",
+        primary: "#EA4B6B",
+        seccondary: "#8E8E8E",
+        "product-desc-slide": "#5C3313",
         ingredients: "#573927",
         "ingredients-list": "#896149",
         "srichand-red": "#B32F53",
@@ -56,6 +58,22 @@ module.exports = {
     plugin(({ addComponents }) => {
       addComponents({
         ".container": {
+          width: "100%",
+          maxWidth: "100%",
+          "@screen md": {
+            maxWidth: "100%"
+          },
+          "@screen lg": {
+            maxWidth: "1024px"
+          },
+          "@screen xl": {
+            maxWidth: "1280px"
+          },
+          "@screen 2xl": {
+            maxWidth: "1440px"
+          }
+        },
+        ".product-container": {
           width: "100%",
           maxWidth: "100%",
           "@screen md": {

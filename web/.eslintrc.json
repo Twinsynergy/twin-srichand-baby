@@ -1,67 +1,67 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "node": true,
-        "es6": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "airbnb",
-        "prettier",
-        "plugin:jsx-a11y/recommended",
-        "plugin:prettier/recommended",
-        "plugin:react-hooks/recommended",
-        "plugin:security/recommended"
-    ],
-    "settings": {
-        "react": {
-            "version": "detect"
-        }
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 2020,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "prettier"
-    ],
-    "rules": {
-        "prefer-const": "error",
-        "no-console": "error",
-        "no-unneeded-ternary" : "off",
-        "no-nested-ternary" : "off",
-        "no-underscore-dangle": "off",
-        "no-param-reassign": "off",
-        "no-use-before-define": ["error", { "functions": false, "classes": false }],
-        "import/no-cycle": "off",
-        "import/named" : "off",
-        "import/order": "off",
-        "react/react-in-jsx-scope": "off",
-        "react/prop-types": "off",
-        "unicorn/filename-case": "off",
-        "@next/next/no-img-element": "off",
-        "import/no-unresolved": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "jsx-a11y/anchor-is-valid": [ "error", {
-            "components": [ "Link" ],
-            "specialLink": [ "hrefLeft", "hrefRight" ],
-            "aspects": [ "invalidHref", "preferButton" ]
-        }],
-        "react/jsx-props-no-spreading": "off",
-        "react/destructuring-assignment": "off",
-        "react/forbid-prop-types": "off",
-        "react/jsx-fragments": "off",
-        "react/require-default-props": "off",
-        "react/no-danger": "off",
-        "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
-        "react-hooks/exhaustive-deps": "warn",
-        "import/prefer-default-export": "off",
-        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:security/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
     }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "prefer-const": "error",
+    "no-console": "error",
+    "no-unneeded-ternary": "off",
+    "no-nested-ternary": "off",
+    "no-underscore-dangle": "off",
+    "no-param-reassign": "off",
+    "no-use-before-define": ["error", { "functions": false, "classes": false }],
+    "import/no-cycle": "off",
+    "import/named": "off",
+    "import/order": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "unicorn/filename-case": "off",
+    "@next/next/no-img-element": "off",
+    "import/no-unresolved": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-fragments": "off",
+    "react/require-default-props": "off",
+    "react/no-danger": "off",
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+  }
 }

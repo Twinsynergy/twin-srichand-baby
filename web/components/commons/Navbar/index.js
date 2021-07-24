@@ -20,7 +20,11 @@ const Navbar = () => {
       <Link href="/products">
         <a
           className={`inline-block whitespace-nowrap text-xl lg:text-2xl no-underline py-2 px-2 lg:px-4 hover:text-grey-lighter hover:text-underline ${
-            router.pathname === "/products" ? "text-primary active" : "text-grey-dark"
+            router.pathname === "/products" ||
+            router.pathname === "/products/asc" ||
+            router.pathname === "/products/desc"
+              ? "text-primary active"
+              : "text-grey-dark"
           }`}>
           Products
         </a>
@@ -28,7 +32,11 @@ const Navbar = () => {
       <Link href="/blog">
         <a
           className={`inline-block whitespace-nowrap text-xl lg:text-2xl no-underline py-2 px-2 lg:px-4 hover:text-grey-lighter hover:text-underline ${
-            router.pathname === "/blog" ? "text-primary active" : "text-grey-dark"
+            router.pathname === "/blog" ||
+            router.pathname === "/blog/asc" ||
+            router.pathname === "/blog/desc"
+              ? "text-primary active"
+              : "text-grey-dark"
           }`}>
           Blog
         </a>

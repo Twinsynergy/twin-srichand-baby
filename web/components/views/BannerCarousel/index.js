@@ -44,13 +44,17 @@ const BannerCarousel = ({ slideValues, className }) => {
     <Slider {...settings}>
       {slideValues.map((item, k) => (
         <figure
-          className={`w-full overflow-hidden relative z-10 align-middle ${className}`}
+          className={`w-full relative overflow-hidden relative z-10 align-middle ${className}`}
           key={k.toString()}>
           <img
-            src={item.content.image}
-            className="w-full h-full pointer-events-none"
+            src={item.content.image.replace(
+              "//a.storyblok.com",
+              "//img2.storyblok.com/0x500/filters:quality(80):format(webp)"
+            )}
+            className="w-full h-full object-cover object-center pointer-events-none"
             alt={item.content.title}
           />
+          <figcaption className="hidden">{item.content.title}</figcaption>
         </figure>
       ))}
     </Slider>

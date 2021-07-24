@@ -81,7 +81,9 @@ class Dropdown extends Component {
                     <a
                       href="/products"
                       className={`block text-2xl px-4 py-2 text-sm hover:bg-gray-100 ${
-                        firstItem === "products"
+                        Router.router.pathname === "/products" ||
+                        Router.router.pathname === "/products/asc" ||
+                        Router.router.pathname === "/products/desc"
                           ? "text-primary active font-semibold"
                           : "text-grey-dark"
                       }`}>
@@ -92,7 +94,9 @@ class Dropdown extends Component {
                     <a
                       href="/blog"
                       className={`block text-2xl px-4 py-2 text-sm hover:bg-gray-100 ${
-                        firstItem === "blog"
+                        Router.router.pathname === "/blog" ||
+                        Router.router.pathname === "/blog/asc" ||
+                        Router.router.pathname === "/blog/desc"
                           ? "text-primary active font-semibold"
                           : "text-grey-dark"
                       }`}>

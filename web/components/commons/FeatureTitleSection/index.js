@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const PageHeadings = (props) => {
+const FeatureTitleSection = (props) => {
   const { title, align, className } = props;
   return (
     <div
@@ -18,13 +18,13 @@ const PageHeadings = (props) => {
   );
 };
 
-PageHeadings.propTypes = {
+FeatureTitleSection.propTypes = {
   title: PropTypes.string.isRequired,
   align: PropTypes.oneOf(["center", "right", "left"]),
   className: PropTypes.string
 };
-PageHeadings.defaultProps = {
+FeatureTitleSection.defaultProps = {
   className: "py-10 lg:py-20 px-5"
 };
 
-export default PageHeadings;
+export default FeatureTitleSection;

@@ -1,4 +1,4 @@
-import React, { Fragment, useRef } from "react";
+import React, { useRef } from "react";
 import PropTypes from "prop-types";
 
 import Accordion from "./Accordion";
@@ -17,7 +17,7 @@ const Accordions = ({ duration, data, closeOthers, opened }) => {
   };
 
   return (
-    <Fragment>
+    <>
       {data.map((accordion, index) => (
         <Accordion
           key={accordion.question}
@@ -30,7 +30,7 @@ const Accordions = ({ duration, data, closeOthers, opened }) => {
           ref={accEl}
         />
       ))}
-    </Fragment>
+    </>
   );
 };
 

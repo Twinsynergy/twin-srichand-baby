@@ -1,5 +1,5 @@
 import React from "react";
-import { PageHeadings } from "../../commons";
+import { FeatureTitleSection } from "../../commons";
 
 const HomeConcept = () => {
   return (
@@ -18,7 +18,7 @@ const HomeConcept = () => {
             </div>
           </div>
           <div className="w-full lg:w-6/12">
-            <PageHeadings
+            <FeatureTitleSection
               className="pt-10 lg:pt-5 mb-5"
               align="left"
               title="ตัวช่วยดูแลผิว เพื่อคุณแม่มือโปร"

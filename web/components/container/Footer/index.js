@@ -27,7 +27,7 @@ const Footer = () => {
                 <a className="block mr-5 hover:text-gray-900" href="/blog">
                   Blogs
                 </a>
-                <a className="block mr-5 hover:text-gray-900" href="/">
+                <a className="block mr-5 hover:text-gray-900" href="/where-to-buy">
                   Where to Buy
                 </a>
               </nav>

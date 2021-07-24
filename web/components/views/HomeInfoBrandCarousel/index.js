@@ -103,6 +103,7 @@ const HomeInfoBrandCarousel = ({ slideValues }) => {
               className="w-full overflow-hidden relative z-10 align-middle"
               key={k.toString()}>
               <img src={item.image} className="mx-auto pointer-events-none" alt={item.title} />
+              <figcaption className="hidden">{item.title}</figcaption>
             </figure>
           ))}
         </Slider>
