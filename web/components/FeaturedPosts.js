@@ -21,7 +21,7 @@ const FeaturedPosts = ({ blok }) => {
                   <img
                     src={post.content.image.replace(
                       "//a.storyblok.com",
-                      "//img2.storyblok.com/filters:quality(80):format(webp)"
+                      "https://img2.storyblok.com/filters:quality(80):format(webp)"
                     )}
                     alt={post.content.title}
                     className="pb-10 w-full"

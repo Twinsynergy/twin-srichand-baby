@@ -13,7 +13,7 @@ const ProductCard = (props) => {
             className="object-cover object-center w-full h-full md:mx-auto block"
             src={featureProduct.replace(
               "//a.storyblok.com",
-              "//img2.storyblok.com/358x446/filters:quality(80):format(webp)"
+              "https://img2.storyblok.com/358x446/filters:quality(80):format(webp)"
             )}
           />
         </a>

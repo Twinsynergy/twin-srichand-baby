@@ -15,7 +15,7 @@ const BlogCard = (props) => {
                 className="rounded-lg xl:h-72 lg:h-48 h-36 w-full object-cover object-center"
                 src={image.replace(
                   "//a.storyblok.com",
-                  "//img2.storyblok.com/0x500/filters:quality(80):format(webp)"
+                  "https://img2.storyblok.com/0x500/filters:quality(80):format(webp)"
                 )}
                 alt={title}
                 loading="lazy"

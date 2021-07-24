@@ -49,7 +49,7 @@ const BannerCarousel = ({ slideValues, className }) => {
           <img
             src={item.content.image.replace(
               "//a.storyblok.com",
-              "//img2.storyblok.com/0x500/filters:quality(80):format(webp)"
+              "https://img2.storyblok.com/0x500/filters:quality(80):format(webp)"
             )}
             className="w-full h-full object-cover object-center pointer-events-none"
             alt={item.content.title}

@@ -52,7 +52,7 @@ const SingleBlog = (props) => {
         desc={story && story.content.intro}
         imgSrc={story.content.feature_product.filename.replace(
           "//a.storyblok.com",
-          "//img2.storyblok.com/"
+          "https://img2.storyblok.com/"
         )}
         siteUrl={`https://srichandbaby.com/${story.full_slug}`}
       />
