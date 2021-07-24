@@ -34,15 +34,16 @@ const RichTextBlock = styled.div`
     position: relative;
     margin-bottom: 45px;
     padding: 0.5rem;
+    border-left: 0;
     &::before {
       content: "“";
       left: -5rem;
-      top: -5rem;
+      top: -1rem;
     }
     &::after {
       content: "”";
       right: -5rem;
-      bottom: 2rem;
+      bottom: -3rem;
     }
     &::after,
     &::before {
