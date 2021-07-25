@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
-import Image from "next/image";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 function SampleNextArrow(props) {
@@ -101,13 +100,10 @@ const Carousel = ({ slideValues }) => {
               className={`w-full relative xl:w-1/2 mb-5 lg:mb-10 xl:mb-0 ${
                 k % 2 === 0 ? "xl:order-1" : "xl:order-2"
               }`}>
-              <Image
+              <img
                 src={item.image}
+                className="w-full object-cover object-center mx-auto"
                 alt={item.title}
-                width={960}
-                height={645}
-                layout="responsive"
-                placeholder="blur"
               />
             </div>
             <div

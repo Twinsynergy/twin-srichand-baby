@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
-import Image from "next/image";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 function SampleNextArrow(props) {
@@ -92,12 +91,10 @@ const Carousel = ({ slideValues }) => {
                 backgroundSize: "100% 100%"
               }}>
               <div className="avatar-profile">
-                <Image
+                <img
                   src={item.image}
+                  className="rounded-full object-cover object-center"
                   alt={item.title}
-                  width={141}
-                  height={141}
-                  placeholder="blur"
                 />
               </div>
             </div>

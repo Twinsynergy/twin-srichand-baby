@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { FeatureTitleSection } from "@/components/commons";
 
 const HomeConcept = () => {
@@ -9,16 +8,13 @@ const HomeConcept = () => {
         <div className="rainbow" />
         <div className="flex flex-wrap lg:flex-nowrap gap-5">
           <div className="w-full relative lg:w-6/12 pr-10 md:pr-12">
-            <Image
+            <img
+              className="w-full object-cover"
               src="/assets/image/PR-Bed-Set_136.png"
               alt="srichand-baby"
-              width={512}
-              height={649}
-              layout="responsive"
-              placeholder="blur"
             />
             <div className="absolute w-1/4 bottom-0 right-0">
-              <Image src="/assets/image/baby-hi.png" alt="srichand-baby" width={163} height={310} />
+              <img src="/assets/image/baby-hi.png" alt="srichand-baby" />
             </div>
           </div>
           <div className="w-full lg:w-6/12">
