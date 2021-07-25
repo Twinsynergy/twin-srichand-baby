@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
+import Image from "next/image";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 function SampleNextArrow(props) {
@@ -102,7 +103,13 @@ const HomeInfoBrandCarousel = ({ slideValues }) => {
             <figure
               className="w-full overflow-hidden relative z-10 align-middle"
               key={k.toString()}>
-              <img src={item.image} className="mx-auto pointer-events-none" alt={item.title} />
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={170}
+                height={160}
+                placeholder="blur"
+              />
               <figcaption className="hidden">{item.title}</figcaption>
             </figure>
           ))}

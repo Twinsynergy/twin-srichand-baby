@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
+import Image from "next/image";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 function SampleNextArrow(props) {
@@ -46,13 +47,13 @@ const BannerCarousel = ({ slideValues, className }) => {
         <figure
           className={`w-full relative overflow-hidden relative z-10 align-middle ${className}`}
           key={k.toString()}>
-          <img
-            src={item.content.image.replace(
-              "//a.storyblok.com",
-              "https://img2.storyblok.com/0x500/filters:quality(80):format(webp)"
-            )}
-            className="w-full h-full object-cover object-center pointer-events-none"
+          <Image
+            src={item.content.image.replace("//a.storyblok.com", "https://img2.storyblok.com")}
             alt={item.content.title}
+            width={1920}
+            height={900}
+            layout="responsive"
+            placeholder="blur"
           />
           <figcaption className="hidden">{item.content.title}</figcaption>
         </figure>

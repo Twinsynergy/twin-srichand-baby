@@ -11,7 +11,7 @@ module.exports = withFonts(
       //   assetPrefix: isProd ? '/srichand-com' : '',
       //   enableSvg: true,
       images: {
-        domains: ["localhost:3000"]
+        domains: ["localhost:3000", "img2.storyblok.com"]
       },
       // cssModules: true,
       cssLoaderOptions: {
