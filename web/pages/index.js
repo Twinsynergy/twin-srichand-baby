@@ -14,36 +14,41 @@ const slideCustomer = [
   {
     key: "1",
     reviews: "I will 100% be purchasing this again if I run out before my pregnancy is done",
-    image: "/assets/image/customer/customer-1.jpg"
+    image: "/assets/image/customer/customer-1.jpg",
+    title: "customer-1"
   },
   {
     key: "2",
     reviews: "I mean seriously the price is amazing for the quality of products",
-    image: "/assets/image/customer/customer-2.jpg"
+    image: "/assets/image/customer/customer-2.jpg",
+    title: "customer-2"
   },
   {
     key: "3",
     reviews:
       "They are soft and not too thick or thin, and the raw edge detail gives this basic a cool factor in the fashion department!",
-    image: "/assets/image/customer/customer-3.jpg"
+    image: "/assets/image/customer/customer-3.jpg",
+    title: "customer-3"
   },
   {
     key: "4",
     reviews: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "https://res.cloudinary.com/dub20ptvt/image/upload/v1618489779/me_n7quph.jpg"
+    image: "/assets/image/customer/customer-4.jpg",
+    title: "customer-4"
   },
   {
     key: "5",
     reviews:
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-    image:
-      "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=b38c22a46932485790a3f52c61fcbe5a"
+    image: "/assets/image/customer/customer-5.jpg",
+    title: "customer-5"
   },
   {
     key: "6",
     reviews:
-      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    image: "https://farm7.staticflickr.com/6163/6195546981_200e87ddaf_b.jpg"
+      "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it .",
+    image: "/assets/image/customer/customer-6.jpg",
+    title: "customer-6"
   }
 ];
 
