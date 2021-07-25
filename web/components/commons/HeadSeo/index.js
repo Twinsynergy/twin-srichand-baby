@@ -22,6 +22,11 @@ const HeadSeo = ({ siteName, siteTitle, desc, imgSrc, siteUrl }) => {
       <meta property="twitter:title" content={siteTitle} />
       <meta property="twitter:description" content={desc} />
       <meta property="twitter:image" content={imgSrc} />
+      {/* Font */}
+      <link rel="preload" href="/assets/fonts/psl114.ttf" as="font" crossOrigin="anonymous" />
+      <link rel="preload" href="/assets/fonts/PSL114pro_1.ttf" as="font" crossOrigin="anonymous" />
+      <link rel="preload" href="/assets/fonts/PSL116pro.ttf" as="font" crossOrigin="anonymous" />
+      <link rel="preload" href="/assets/fonts/PSL156Pro.otf" as="font" crossOrigin="anonymous" />
     </Head>
   );
 };
