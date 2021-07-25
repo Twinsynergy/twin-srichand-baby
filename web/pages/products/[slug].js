@@ -10,7 +10,7 @@ import { HeadSeo } from "@/components/commons";
 import { SingleProduct, ProductSlider } from "@/components/views";
 import Storyblok, { getAllProducts } from "@/utils/storyblok";
 
-const SingleBlog = (props) => {
+const ProductDetail = (props) => {
   const { story, stories } = props;
   const router = useRouter();
   const [breadcrumbs, setBreadcrumbs] = useState(null);
@@ -52,9 +52,9 @@ const SingleBlog = (props) => {
         desc={story && story.content.intro}
         imgSrc={story.content.feature_product.filename.replace(
           "//a.storyblok.com",
-          "https://img2.storyblok.com/"
+          "//img2.storyblok.com/"
         )}
-        siteUrl={`https://srichandbaby.com/${story.full_slug}`}
+        siteUrl={`https://srichandbaby.twinsynergy.co.th/${story.full_slug}`}
       />
       <Layout>
         {story !== undefined ? (
@@ -105,4 +105,4 @@ export const getStaticProps = async ({ params }) => {
   };
 };
 
-export default SingleBlog;
+export default ProductDetail;

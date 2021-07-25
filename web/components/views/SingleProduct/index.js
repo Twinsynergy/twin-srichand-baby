@@ -87,7 +87,7 @@ const SingleProduct = ({ blok, routes }) => {
                 className="w-full my-10"
                 src={blok.certifications.filename.replace(
                   "//a.storyblok.com",
-                  "https://img2.storyblok.com/0x200/filters:quality(80):format(webp)"
+                  "//img2.storyblok.com/0x200/filters:quality(80):format(webp)"
                 )}
                 alt={blok.certifications.alt ? blok.certifications.alt : blok.title}
               />
@@ -101,7 +101,7 @@ const SingleProduct = ({ blok, routes }) => {
                   alt={blok.feature_product.alt ? blok.feature_product.alt : blok.title}
                   src={blok.feature_product.filename.replace(
                     "//a.storyblok.com",
-                    "https://img2.storyblok.com/0x200/filters:quality(80):format(webp)"
+                    "//img2.storyblok.com/0x200/filters:quality(80):format(webp)"
                   )}
                 />
               </div>

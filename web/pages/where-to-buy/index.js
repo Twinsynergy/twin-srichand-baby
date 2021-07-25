@@ -32,8 +32,7 @@ const WhereToBuy = () => {
       <HeadSeo
         siteTitle="Where to buy"
         desc="สั่งซื้อซื้อสินค้าได้ที่ไหนบ้าง"
-        imgSrc="https://srichandbaby.com/assets/image/pagetitle/banner-head.jpg"
-        siteUrl="https://srichandbaby.com/where-to-buy"
+        siteUrl="https://srichandbaby.twinsynergy.co.th/where-to-buy"
       />
       <Layout>
         <PageTitle className="pt-20 md:pt-36" />
@@ -44,7 +43,7 @@ const WhereToBuy = () => {
               <div className="flex flex-wrap -m-4">
                 <div className="p-4 md:w-1/3">
                   <div className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden">
-                    <a href="/" target="_blank" rel="noreferrer">
+                    <a href="https://www.1948beauty.com" target="_blank" rel="noreferrer">
                       <span>
                         <img
                           className="w-full object-cover object-center"
@@ -57,7 +56,10 @@ const WhereToBuy = () => {
                 </div>
                 <div className="p-4 md:w-1/3">
                   <div className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden">
-                    <a href="/" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://shopee.co.th/srichandofficial"
+                      target="_blank"
+                      rel="noreferrer">
                       <span>
                         <img
                           className="w-full object-cover object-center"
@@ -70,7 +72,10 @@ const WhereToBuy = () => {
                 </div>
                 <div className="p-4 md:w-1/3">
                   <div className="h-full border-2 border-gray-200 border-opacity-60 overflow-hidden">
-                    <a href="/" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://www.watsons.co.th/all-brands/b/170331"
+                      target="_blank"
+                      rel="noreferrer">
                       <span>
                         <img
                           className="w-full object-cover object-center"

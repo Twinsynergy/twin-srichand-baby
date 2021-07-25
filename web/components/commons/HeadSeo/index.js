@@ -37,7 +37,7 @@ HeadSeo.defaultProps = {
   siteTitle: "",
   desc: "",
   siteName: "Srichand Baby",
-  imgSrc: "https://srichandbaby.com/assets/image/pagetitle/banner-head.jpg"
+  imgSrc: "https://srichandbaby.twinsynergy.co.th/assets/image/pagetitle/banner-head.jpg"
 };
 
 export default HeadSeo;

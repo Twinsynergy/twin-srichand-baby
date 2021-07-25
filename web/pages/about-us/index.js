@@ -8,8 +8,7 @@ const AboutUs = () => {
       <HeadSeo
         siteTitle="เกี่ยวกับเรา"
         desc="ในอดีตมีลูกค้าบางกลุ่มนำแป้งศรีจันทร์จากต้นตำรับ (ผงหอมศรีจันทร์) ไปใช้กับเด็กเล็กซึ่งได้ผลดีในเรื่องการช่วยยับยั้ง และป้องกันการเกิดผื่นผ้าอ้อม และแนะนำกันต่อๆ มา"
-        imgSrc="https://srichandbaby.com/assets/image/pagetitle/banner-head.jpg"
-        siteUrl="https://srichandbaby.com/about-us"
+        siteUrl="https://srichandbaby.twinsynergy.co.th/about-us"
       />
       <Layout>
         <section className="section section-hero mx-auto bg-white">

@@ -10,7 +10,11 @@ const Blog = (props) => {
 
   return (
     <>
-      <HeadSeo siteTitle="Blog" desc="" imgSrc="https://srichandbaby.com/" />
+      <HeadSeo
+        siteTitle="Blog"
+        desc="ข่าวสารและเกร็คความรู้การใช้ผลิตภัณฑ์สำหรับเด็กเล็ก"
+        siteUrl="https://srichandbaby.twinsynergy.co.th/blog"
+      />
       <Layout>
         <PageTitle className="pt-20 md:pt-36" />
         <section className="section section-where-to-buy pb-24">

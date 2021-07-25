@@ -9,7 +9,11 @@ const Products = (props) => {
   const { story, products } = props;
   return (
     <>
-      <HeadSeo siteTitle="Products" desc="สินค้าทั้งหมดใน Srichand baby" />
+      <HeadSeo
+        siteTitle="Products"
+        desc="สินค้าทั้งหมดใน Srichand baby"
+        siteUrl="https://srichandbaby.twinsynergy.co.th/products"
+      />
       <Layout>
         {story && <HomeSlider blok={story} />}
         <section className="section section-where-to-buy pb-24">

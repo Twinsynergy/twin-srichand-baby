@@ -11,13 +11,13 @@ const SectionShare = (props) => {
         <ul className="social-content inline-block">
           <li className="social-item inline-block">
             <FacebookShare
-              url={`https://srichandbaby.com/${slug}`}
+              url={`https://srichandbaby.twinsynergy.co.th/${slug}`}
               quote={quote}
               hashtag={hashtag}
             />
           </li>
           <li className="social-item inline-block ml-2">
-            <TwitterShare url={`https://srichandbaby.com/${slug}`} title={title} />
+            <TwitterShare url={`https://srichandbaby.twinsynergy.co.th/${slug}`} title={title} />
           </li>
         </ul>
       </div>

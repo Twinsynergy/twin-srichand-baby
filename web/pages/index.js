@@ -101,8 +101,7 @@ export default function Home(props) {
       <HeadSeo
         siteTitle="ตัวช่วยดูแลผิว เพื่อคุณแม่มือโปร"
         desc="เพราะผิวลูกน้อยเป็นผิวที่บอบบาง และง่ายต่อการระคายเคืองมากกว่าผิวของผู้ใหญ่ รวมถึงเกราะป้องกันผิวนั้นยังบอบบาง ทำให้เกิดความกังวลใจอยู่ตลอดเวลา"
-        imgSrc="https://srichandbaby.com/assets/image/pagetitle/banner-head.jpg"
-        siteUrl="https://srichandbaby.com/"
+        siteUrl="https://srichandbaby.twinsynergy.co.th/"
       />
       <Layout title="ศรีจันทร์ เบบี้" desc="" imgSrc="" metaUrl="" keyWords="" author="">
         {story && <HomeSlider blok={story} />}

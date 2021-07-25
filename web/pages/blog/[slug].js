@@ -50,11 +50,8 @@ const SingleBlog = (props) => {
       <HeadSeo
         siteTitle={story && story.content.title}
         desc={story && story.content.intro}
-        imgSrc={story.content.image.replace(
-          "//a.storyblok.com",
-          "https://img2.storyblok.com/0x500/"
-        )}
-        siteUrl={`https://srichandbaby.com/${story.full_slug}`}
+        imgSrc={story.content.image.replace("//a.storyblok.com", "//img2.storyblok.com/0x500/")}
+        siteUrl={`https://srichandbaby.twinsynergy.co.th/${story.full_slug}`}
       />
       <Layout>
         <PageTitle hasBreadcrumbs={false} className="pt-40 md:pt-44" />
@@ -71,7 +68,7 @@ const SingleBlog = (props) => {
                     story &&
                     story.content.image.replace(
                       "//a.storyblok.com",
-                      "https://img2.storyblok.com/0x500/filters:quality(80):format(webp)"
+                      "//img2.storyblok.com/0x500/filters:quality(80):format(webp)"
                     )
                   }
                   alt={story && story.content.title}

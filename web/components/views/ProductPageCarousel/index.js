@@ -78,7 +78,7 @@ const ProductPageCarousel = ({ slideValues }) => {
           slug={item.slug}
           featureProduct={item.content.feature_product.filename.replace(
             "//a.storyblok.com",
-            "https://img2.storyblok.com/0x500/filters:quality(80):format(webp)"
+            "//img2.storyblok.com/0x500/filters:quality(80):format(webp)"
           )}
           name={item.name}
         />
