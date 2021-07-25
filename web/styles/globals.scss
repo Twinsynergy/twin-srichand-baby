@@ -42,21 +42,25 @@
   font-family: "PSLOmyim";
   src: url("/assets/fonts/psl114.ttf");
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "PSLOmyimPro";
   src: url("/assets/fonts/PSL114pro_1.ttf");
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "PSLOmyimProBold";
   src: url("/assets/fonts/PSL116pro.ttf");
   font-style: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: "PSLOmyimExtraPro";
   src: url("/assets/fonts/PSL156Pro.otf");
   font-style: normal;
+  font-display: swap;
 }
 
 html,
@@ -133,7 +137,15 @@ pre {
   overflow: auto;
   -ms-overflow-style: scrollbar;
 }
-*+address, *+blockquote, *+dl, *+fieldset, *+figure, *+ol, *+p, *+pre, *+ul {
+* + address,
+* + blockquote,
+* + dl,
+* + fieldset,
+* + figure,
+* + ol,
+* + p,
+* + pre,
+* + ul {
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -180,8 +192,7 @@ svg:not(:root) {
   overflow: hidden; // Hide the overflow in IE
 }
 
-
-// 
+//
 
 .container {
   position: relative;
