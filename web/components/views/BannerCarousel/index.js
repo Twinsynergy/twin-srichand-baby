@@ -46,14 +46,30 @@ const BannerCarousel = ({ slideValues, className }) => {
         <figure
           className={`w-full relative overflow-hidden relative z-10 align-middle ${className}`}
           key={k.toString()}>
-          <img
-            src={item.content.image.replace(
-              "//a.storyblok.com",
-              "https://img2.storyblok.com/0x500/filters:quality(80):format(webp)"
-            )}
-            className="w-full h-full object-cover object-center pointer-events-none"
-            alt={item.content.title}
-          />
+          <picture>
+            <source
+              srcSet={item.content.image.replace(
+                "//a.storyblok.com",
+                "https://img2.storyblok.com/425x0/filters:quality(80):format(webp)"
+              )}
+              media="(max-width: 425px)"
+            />
+            <source
+              srcSet={item.content.image.replace(
+                "//a.storyblok.com",
+                "https://img2.storyblok.com/1024x0/filters:quality(80):format(webp)"
+              )}
+              media="(max-width: 1024px)"
+            />
+            <img
+              src={item.content.image.replace(
+                "//a.storyblok.com",
+                "https://img2.storyblok.com/1920x0/filters:quality(80):format(webp)"
+              )}
+              className="w-full h-full object-cover object-center pointer-events-none"
+              alt={item.content.title}
+            />
+          </picture>
           <figcaption className="hidden">{item.content.title}</figcaption>
         </figure>
       ))}
