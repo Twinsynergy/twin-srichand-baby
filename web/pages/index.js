@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useState } from "react";
 import { Layout } from "@/components/container";
 import {
@@ -100,7 +101,6 @@ const brand = [
 
 export default function Home(props) {
   const [story] = useState(props.story);
-
   return (
     <>
       <HeadSeo
@@ -126,6 +126,6 @@ export async function getStaticProps(context) {
       story: stories || [],
       preview: context.preview || false
     },
-    revalidate: 1
+    revalidate: 10
   };
 }

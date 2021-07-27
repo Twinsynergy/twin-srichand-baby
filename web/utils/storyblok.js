@@ -62,8 +62,6 @@ export async function getAllContentFromBlogDesc() {
   return response.data;
 }
 
-export default Storyblok;
-
 export async function getAllProducts() {
   const response = await Storyblok.get("cdn/stories", {
     starts_with: "products/"
@@ -91,3 +89,5 @@ export async function getProductsBySlug(full_slug) {
   const { data } = await Storyblok.get(`cdn/stories/products/${full_slug}`, {});
   return data;
 }
+
+export default Storyblok;

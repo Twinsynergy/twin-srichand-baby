@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable no-restricted-syntax */
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import moment from "moment";
@@ -13,32 +13,15 @@ import Storyblok, { getAllProducts } from "@/utils/storyblok";
 const ProductDetail = (props) => {
   const { story, stories } = props;
   const router = useRouter();
-  const [breadcrumbs, setBreadcrumbs] = useState(null);
-  useEffect(() => {
-    if (router) {
-      const linkPath = router.asPath.split("/");
-      if (linkPath.includes("asc")) {
-        linkPath.splice(2);
-      }
-      if (linkPath.includes("desc")) {
-        linkPath.splice(2);
-      }
-      linkPath.shift();
-
-      const pathArray = linkPath.map((paths, i) => {
-        return { breadcrumb: paths, href: `/${linkPath.slice(0, i + 1).join("/")}` };
-      });
-
-      setBreadcrumbs(pathArray);
-    }
-  }, [router]);
-
-  if (!breadcrumbs) {
-    return null;
-  }
 
   if (router.isFallback) {
-    return <h1>Loading...</h1>;
+    return (
+      <div className="w-full h-screen">
+        <div className="flex items-center justify-center">
+          <h1 className="text-center text-primary">Loading...</h1>
+        </div>
+      </div>
+    );
   }
 
   if (!router.isFallback && !story) {
@@ -60,7 +43,6 @@ const ProductDetail = (props) => {
         {story !== undefined ? (
           <SingleProduct
             title="SRICHAND BABY - NEW BORN POWDER"
-            routes={breadcrumbs}
             published={moment(story.published_at).format("DD/MM/YYYY")}
             blok={story && story.content}
           />

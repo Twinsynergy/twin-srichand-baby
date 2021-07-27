@@ -27,6 +27,9 @@ const HeadSeo = ({ siteName, siteTitle, desc, imgSrc, siteUrl }) => {
       <link rel="preload" href="/assets/fonts/PSL114pro_1.ttf" as="font" crossOrigin="anonymous" />
       <link rel="preload" href="/assets/fonts/PSL116pro.ttf" as="font" crossOrigin="anonymous" />
       <link rel="preload" href="/assets/fonts/PSL156Pro.otf" as="font" crossOrigin="anonymous" />
+      {/* Fav icon */}
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     </Head>
   );
 };

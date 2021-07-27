@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SbEditable from "storyblok-react";
 import { render } from "storyblok-rich-text-react-renderer";
 import { useRouter } from "next/router";
@@ -35,11 +35,34 @@ const RichTextBlock = styled.div`
 
 const SingleProduct = ({ blok, routes }) => {
   const router = useRouter();
+  const [breadcrumbs, setBreadcrumbs] = useState(null);
+  useEffect(() => {
+    if (router) {
+      const linkPath = router.asPath.split("/");
+      if (linkPath.includes("asc")) {
+        linkPath.splice(2);
+      }
+      if (linkPath.includes("desc")) {
+        linkPath.splice(2);
+      }
+      linkPath.shift();
+
+      const pathArray = linkPath.map((paths, i) => {
+        return { breadcrumb: paths, href: `/${linkPath.slice(0, i + 1).join("/")}` };
+      });
+
+      setBreadcrumbs(pathArray);
+    }
+  }, [router]);
+
+  if (!breadcrumbs) {
+    return null;
+  }
   return (
     <SbEditable content={blok} key={blok._uid}>
       <div className="container products mx-auto px-5 pt-10">
         <h1 className="tracking-wide text-primary">ผลิตภัณฑ์</h1>
-        <Breadcrumb postTitle="SRICHAND BABY - NEW BORN POWDER" routes={routes} />
+        <Breadcrumb postTitle="SRICHAND BABY - NEW BORN POWDER" routes={breadcrumbs} />
         <div className="product-content md:pt-5 pb-10">
           {blok.product_gallery.length !== 0 ? (
             <div className="product-slide my-10 border-2 border-gray-300">
@@ -101,7 +124,7 @@ const SingleProduct = ({ blok, routes }) => {
                   alt={blok.feature_product.alt ? blok.feature_product.alt : blok.title}
                   src={blok.feature_product.filename.replace(
                     "//a.storyblok.com",
-                    "//img2.storyblok.com/0x200/filters:quality(80):format(webp)"
+                    "//img2.storyblok.com/465x0/filters:quality(80):format(webp)"
                   )}
                 />
               </div>

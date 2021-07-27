@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable no-console */
 import Teaser from "./Teaser";
 import Grid from "./Grid";
 import Feature from "./Feature";

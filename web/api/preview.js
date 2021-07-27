@@ -5,7 +5,7 @@ export default async function preview(req, res) {
   const params = req.url.split("?");
   // Check the secret and next parameters
   // This secret should only be known to this API route and the CMS
-  if (req.query.secret !== process.env.STORYBLOK_TOKEN) {
+  if (req.query.secret !== "PM9yYSQ41WRB9FD6KWoxKgtt") {
     return res.status(401).json({ message: "Invalid token" });
   }
 

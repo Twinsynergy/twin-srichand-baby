@@ -23,8 +23,8 @@ const Navbar = () => {
             router.pathname === "/products" ||
             router.pathname === "/products/asc" ||
             router.pathname === "/products/desc"
-              ? "text-primary active"
-              : "text-grey-dark"
+              ? "text-primary active font-semibold"
+              : "text-grey-dark hover:text-primary"
           }`}>
           Products
         </a>
@@ -35,8 +35,8 @@ const Navbar = () => {
             router.pathname === "/blog" ||
             router.pathname === "/blog/asc" ||
             router.pathname === "/blog/desc"
-              ? "text-primary active"
-              : "text-grey-dark"
+              ? "text-primary active font-semibold"
+              : "text-grey-dark hover:text-primary"
           }`}>
           Blog
         </a>
@@ -44,7 +44,9 @@ const Navbar = () => {
       <Link href="/where-to-buy">
         <a
           className={`inline-block whitespace-nowrap text-xl lg:text-2xl no-underline py-2 px-2 lg:px-4 hover:text-grey-lighter hover:text-underline ${
-            router.pathname === "/where-to-buy" ? "text-primary active" : "text-grey-dark"
+            router.pathname === "/where-to-buy"
+              ? "text-primary active font-semibold"
+              : "text-grey-dark hover:text-primary"
           }`}>
           Where to Buy
         </a>
