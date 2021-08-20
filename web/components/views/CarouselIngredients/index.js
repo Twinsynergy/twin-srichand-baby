@@ -32,6 +32,7 @@ function SamplePrevArrow(props) {
 const settings = {
   infinite: true,
   speed: 500,
+  autoplay: true,
   arrows: false,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
@@ -110,10 +111,11 @@ const Carousel = ({ slideValues }) => {
               className={`xl:flex-grow xl:w-1/2 w-full flex flex-col md:items-start md:text-left items-center pt-5 mb-10 xl:mb-5 ${
                 k % 2 === 0 ? "xl:order-2 pl-5 pr-5 xl:pl-10" : "xl:order-1 pr-5 xl:pr-10 pl-5"
               }`}>
-              <h2 className="title-font sm:text-4xl text-3xl mb-4 text-center font-medium text-ingredients">
-                {item.title}
+              <h2 className="sm:text-4xl text-3xl mb-4 w-full flex font-medium text-ingredients">
+                <img src="/assets/image/ingredients/list-flower.webp" alt="flower" />
+                <span className="ml-2">{item.title}</span>
               </h2>
-              <div className="text-xl md:text-2xl leading-relaxed text-left text-ingredients">
+              <div className="text-xl md:text-2xl leading-relaxed text-left text-ingredients-secondary">
                 <div dangerouslySetInnerHTML={{ __html: item.desc }} />
               </div>
             </div>

@@ -28,7 +28,7 @@ class Tabs extends Component {
 
     return (
       <div className="tabs md:px-5">
-        <ul className={`flex w-full nav-pills nav-fill pt-2`}>
+        <ul className="text-2xl flex w-full nav-pills nav-fill pt-2">
           {children.map((child) => {
             const { label, title } = child.props;
 
@@ -43,7 +43,7 @@ class Tabs extends Component {
             );
           })}
         </ul>
-        <div className="tab-content">
+        <div className="tab-content text-2xl">
           {children.map((child) => {
             if (child.props.label !== activeTab) return undefined;
             return child.props.children;

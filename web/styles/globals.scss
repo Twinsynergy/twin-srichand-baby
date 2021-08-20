@@ -234,7 +234,7 @@ svg:not(:root) {
   }
 }
 .baby {
-  background-image: url("/assets/image/icon-mong1.png");
+  background-image: url("/assets/image/icon-mong1.webp");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -260,21 +260,7 @@ svg:not(:root) {
   width: 66px;
   height: 66px;
   &.facebook-icon {
-    background-image: url("/assets/image/social/facebook.png");
-    background-size: 100%;
-    display: block;
-    width: 100%;
-    background-repeat: no-repeat;
-  }
-  &.instagram-icon {
-    background-image: url("/assets/image/social/instagram.png");
-    background-size: 100%;
-    display: block;
-    width: 100%;
-    background-repeat: no-repeat;
-  }
-  &.twitter-icon {
-    background-image: url("/assets/image/social/twitter.png");
+    background-image: url("/assets/image/social/facebook.webp");
     background-size: 100%;
     display: block;
     width: 100%;
@@ -293,7 +279,7 @@ svg:not(:root) {
 //
 
 .page-title {
-  background: url("/assets/image/banner-polygon.png") no-repeat;
+  background: url("/assets/image/banner-polygon.webp") no-repeat;
   background-size: cover;
   background-position: top center;
 }
@@ -311,7 +297,7 @@ svg:not(:root) {
   overflow: hidden;
   padding: 220px 0;
   background-size: 100% 100%;
-  background: transparent url("/assets/image/bg_sec01.png") no-repeat;
+  background: transparent url("/assets/image/bg_sec01.webp") no-repeat;
   background-size: cover;
   margin-top: -140px;
   z-index: 1;
@@ -370,7 +356,7 @@ svg:not(:root) {
     content: "";
     width: 100%;
     display: block;
-    background: url("/assets/image/bg-our-active-ingredients.png") no-repeat;
+    background: url("/assets/image/bg-our-active-ingredients.webp") no-repeat;
     background-size: cover;
     background-position: top center;
   }
@@ -479,8 +465,8 @@ svg:not(:root) {
   }
   .avatar-profile {
     position: absolute;
-    width: 155px;
-    height: 155px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     left: 50%;
     top: 50%;
@@ -507,17 +493,17 @@ svg:not(:root) {
   &:nth-child(1) {
     background-size: cover;
     background-position: top center;
-    background: url("/assets/image/br-review1.png") no-repeat;
+    background: url("/assets/image/br-review1.webp") no-repeat;
   }
   &:nth-child(2) {
     background-size: cover;
     background-position: top center;
-    background: url("/assets/image/br-review2.png") no-repeat;
+    background: url("/assets/image/br-review2.webp") no-repeat;
   }
   &:nth-child(3) {
     background-size: cover;
     background-position: top center;
-    background: url("/assets/image/br-review3.png") no-repeat;
+    background: url("/assets/image/br-review3.webp") no-repeat;
   }
 }
 
@@ -526,7 +512,7 @@ svg:not(:root) {
   height: 150px;
   background-size: 215px 150px;
   background-repeat: no-repeat;
-  background-image: url("/assets/image/clound.png");
+  background-image: url("/assets/image/cloud.webp");
   background-position: center;
   position: absolute;
   left: -30px;
@@ -541,7 +527,7 @@ svg:not(:root) {
   height: 178px;
   background-size: 330px 178px;
   background-repeat: no-repeat;
-  background-image: url("/assets/image/rainbow.png");
+  background-image: url("/assets/image/rainbow.webp");
   background-position: center;
   position: absolute;
   right: -70px;
@@ -615,18 +601,6 @@ svg:not(:root) {
   }
 }
 
-// filter blog
-.filter {
-  ul {
-    > li + li {
-      &:before {
-        padding: 0 5px;
-        color: #ccc;
-        content: "\00a0|\00a0";
-      }
-    }
-  }
-}
 //
 .product-slide {
   .product-custom-dots {

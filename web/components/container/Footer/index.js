@@ -2,19 +2,15 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="mt-0">
+    <footer>
       <div
-        className="footer-top lazy"
-        style={{ backgroundImage: 'url("/assets/image/top-footer.png")' }}>
-        <div className="container mx-auto">
-          <div className="block text-srichand-red text-center text-2xl md:text-3xl lg:text-4xl">
-            ตัวช่วยดูแลผิว เพื่อคุณแม่มือโปร
-          </div>
-        </div>
+        className="footer-top text-white flex justify-center items-center text-center md:text-3xl lg:text-4xl"
+        style={{ backgroundImage: 'url("/assets/image/top-footer.webp")' }}>
+        <div>ตัวช่วยดูแลผิว เพื่อคุณแม่มือโปร</div>
       </div>
       <div className="bg-footer-srichand">
         <div className="container mx-auto">
-          <div className="relative pt-48 lg:pt-56 pb-10 md:pb-20 text-white px-5 mx-auto lg:mx-0 lg:max-w-none block md:flex gap-2 lg:gap-8 text-sm">
+          <div className="relative px-5 py-5 text-white mx-auto lg:mx-0 lg:max-w-none md:flex gap-2 lg:gap-8 text-sm">
             <div className="medium-4 md:w-2/3">
               <h4 className="text-2xl lg:text-3xl mb-5">Srichand Baby</h4>
               <nav className="block lg:flex lg:flex-wrap text-2xl">
@@ -41,12 +37,6 @@ const Footer = () => {
                   rel="noreferrer"
                   className="block link-icon mg-r px-2">
                   <span className="link-icon facebook-icon" />
-                </a>
-                <a href="/" className="block link-icon mg-r px-2">
-                  <span className="link-icon instagram-icon" />
-                </a>
-                <a href="/" className="block link-icon mg-r px-2">
-                  <span className="link-icon twitter-icon" />
                 </a>
               </nav>
             </div>

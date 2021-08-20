@@ -15,7 +15,7 @@ function Header() {
               <Link href="/">
                 <a className="block">
                   <span className="logo">
-                    <img src="/assets/image/logobaby.png" alt="srichand-baby" />
+                    <img src="/assets/image/logobaby.webp" alt="srichand-baby" />
                   </span>
                 </a>
               </Link>

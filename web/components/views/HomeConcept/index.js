@@ -1,5 +1,4 @@
 import React from "react";
-import { FeatureTitleSection } from "@/components/commons";
 
 const HomeConcept = () => {
   return (
@@ -10,42 +9,28 @@ const HomeConcept = () => {
           <div className="w-full relative lg:w-6/12 pr-10 md:pr-12">
             <img
               className="w-full object-cover"
-              src="/assets/image/PR-Bed-Set_136.png"
+              src="/assets/image/mom-hug-baby.webp"
               alt="srichand-baby"
             />
             <div className="absolute w-1/4 bottom-0 right-0">
-              <img src="/assets/image/baby-hi.png" alt="srichand-baby" />
+              <img src="/assets/image/baby-hi.webp" alt="srichand-baby" />
             </div>
           </div>
           <div className="w-full lg:w-6/12">
-            <FeatureTitleSection
-              className="pt-10 lg:pt-5 mb-5"
-              align="left"
-              title="ตัวช่วยดูแลผิว เพื่อคุณแม่มือโปร"
-            />
-            <p className="mb-5 text-2xl">
-              เพราะผิวลูกน้อยเป็นผิวที่บอบบาง และง่ายต่อการระคายเคือง
-              <span className="block md:inline">
-                มากกว่าผิวของผู้ใหญ่ รวมถึงเกราะป้องกันผิวนั้นยังบอบบาง
-              </span>
-              <span className="block md:inline">
-                {" "}
-                ทำให้เกิดความกังวลใจอยู่ตลอดเวลา ไม่สามารถปฏิบัติหน้าที่ได้อย่างเต็มที่
-              </span>
-              <span className="block md:inline">
-                {" "}
-                จึงมองหาผลิตภัณฑ์ที่เข้ามาช่วยจัดการปัญหาผิวของลูกน้อย
-              </span>
+            <h1 className="text-primary">ศรีจันทร์ เบบี้</h1>
+            <h3 className="text-orange">ตัวช่วยดูแลผิว เพื่อคุณแม่มือโปร</h3>
+            <p className="mb-5 text-2xl text-secondary">
+              เพราะผิวลูกน้อยเป็นผิวที่บอบบาง และง่ายต่อการระคายเคืองมากกว่าผิวของผู้ใหญ่
+              รวมถึงเกราะป้องกันผิวนั้นยังบอบบาง ทำให้คุณแม่เกิดความกังวลใจอยู่ตลอดเวลา
+              ไม่สามารถปฏิบัติหน้าที่ได้อย่างเต็มที่
+              จึงมองหาผลิตภัณฑ์ที่เข้ามาช่วยจัดการปัญหาผิวของลูกน้อย
             </p>
-            <p className="text-2xl">
+            <p className="text-2xl text-secondary">
               ศรีจันทร์ เบบี้เป็นแบรนด์ที่เข้าใจปัญหาผิวที่เกิดขึ้นกับลูกน้อย
-              <span className="block md:inline">
-                {" "}
-                จึงพัฒนาผลิตภัณฑ์เพื่อคุณแม่ ด้วยการคัดสรรสารสกัดจาก
-              </span>
-              <span className="">ธรรมชาตืที่ช่วยปกป้องผิวจากผดผื่นคัน ที่มีสาเหตุมาจาก</span>
-              <span className="">ความอับชื้น พร้อมฟื้นบำรุงและเสร้มสร้างผิวของลูกน้อยให้</span>
-              <span className="">แข็งแรง ให้คุณแม่ๆ จัดการปัญหาผิวได้อย่างมือโปร</span>
+              จึงพัฒนาผลิตภัณฑ์เพื่อคุณแม่
+              ด้วยการคัดสรรสารสกัดจากธรรมชาตืที่ช่วยปกป้องผิวจากผดผื่นคัน
+              ที่มีสาเหตุมาจากความอับชื้น พร้อมฟื้นบำรุงและเสริมสร้างผิวของลูกน้อยให้แข็งแรง
+              ให้คุณแม่ๆ จัดการปัญหาผิวได้อย่างมือโปร
             </p>
           </div>
         </div>

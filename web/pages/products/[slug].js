@@ -50,7 +50,7 @@ const ProductDetail = (props) => {
           "loading"
         )}
         <div className="container mx-auto px-5 pb-24 md:pb-48">
-          <h2 className="text-center uppercase mt-10 mb-20">Related Products</h2>
+          <h2 className="text-center uppercase mt-20 mb-14">Related Products</h2>
           <ProductSlider blok={stories} />
         </div>
       </Layout>

@@ -26,17 +26,21 @@ module.exports = {
     },
     extend: {
       zIndex: {
-        1: "1"
+        1: "1",
+        2: "2"
       },
       colors: {
         black: "#000",
         white: "#fff",
+        orange: "#ECA308",
         placeholder: "#B5B5C3",
         primary: "#EA4B6B",
-        seccondary: "#8E8E8E",
+        secondary: "#5F5F5F",
         "product-desc-slide": "#5C3313",
+        "old-lace": "#FDF8EF",
+        "older-lace": "#F7EEDE",
         ingredients: "#573927",
-        "ingredients-list": "#896149",
+        "ingredients-secondary": "#8B6C41",
         "srichand-red": "#B32F53",
         "footer-srichand": "#2b4073",
         "footer-srichand-border": "#33477a"
@@ -93,67 +97,6 @@ module.exports = {
           width: "100%",
           maxWidth: "1920px",
           margin: "0 auto"
-        },
-        ".accordion": {
-          marginBottom: "15px",
-          border: "1px solid #000",
-          ".opened": {
-            ".accordion__head": {
-              span: {
-                transformOrigin: "center center"
-              }
-            }
-          },
-          "&.disable-click": {
-            ".accordion__head": {
-              "&:after": {
-                position: "absolute",
-                top: "0",
-                left: "0",
-                width: "100%",
-                height: "100%",
-                content: "''",
-                zIndex: "10"
-              }
-            }
-          },
-          ".accordion__head": {
-            backgroundColor: "#fff",
-            position: "relative",
-            cursor: "pointer",
-            p: {
-              padding: "21px 50px 21px 22px",
-              color: "#000",
-              marginBottom: "0",
-              zIndex: "1",
-              position: "relative"
-            },
-            span: {
-              position: "absolute",
-              top: "50%",
-              right: "17px",
-              marginTop: "-12px",
-              cursor: "pointer",
-              fontSize: "1.5rem",
-              transform: "rotate(0deg)",
-              transitionProperty: "transform",
-              transitionTimingFunction: "ease",
-              svg: {
-                display: "block"
-              }
-            }
-          },
-          ".accordion__body": {
-            backgroundColor: "#000",
-            display: "none",
-            overflow: "hidden",
-            transitionProperty: "height",
-            transitionTimingFunction: "ease",
-            "&_inner": {
-              padding: "33px 22px",
-              color: "#fff"
-            }
-          }
         }
       });
     })

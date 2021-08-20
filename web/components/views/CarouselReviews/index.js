@@ -83,10 +83,10 @@ const Carousel = ({ slideValues }) => {
               style={{
                 backgroundImage: `url("${
                   +item.key % 3 === 0
-                    ? "/assets/image/br-review3.png"
+                    ? "/assets/image/br-review3.webp"
                     : +item.key % 2 === 0
-                    ? "/assets/image/br-review2.png"
-                    : "/assets/image/br-review1.png"
+                    ? "/assets/image/br-review2.webp"
+                    : "/assets/image/br-review1.webp"
                 }")`,
                 backgroundSize: "100% 100%"
               }}>

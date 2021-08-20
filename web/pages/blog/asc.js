@@ -13,6 +13,8 @@ const BlogSortAsc = (props) => {
         siteTitle="Blog"
         desc="ข่าวสารและเกร็คความรู้การใช้ผลิตภัณฑ์สำหรับเด็กเล็ก"
         siteUrl="https://srichandbaby.twinsynergy.co.th/blog"
+        imgSrc="https://srichandbaby.twinsynergy.co.th/assets/image/banner-polygon.webp"
+        imgPreload="/assets/image/banner-polygon.webp"
       />
       <Layout>
         <PageTitle className="pt-20 md:pt-36" />
@@ -21,14 +23,11 @@ const BlogSortAsc = (props) => {
             title="Blog"
             optFilter={[
               <li aria-hidden="true" className="inline-block">
-                <Link href="/blog/desc">
-                  <a>ใหม่สุด</a>
-                </Link>
+                <Link href="/blog/desc">ใหม่สุด</Link>
               </li>,
-              <li aria-hidden="true" className="inline-block">
-                <Link href="/blog/asc">
-                  <a>เก่าสุด</a>
-                </Link>
+              <li className="inline-block px-1"> | </li>,
+              <li aria-hidden="true" className="inline-block underline">
+                <Link href="/blog/asc">เก่าสุด</Link>
               </li>
             ]}
           />

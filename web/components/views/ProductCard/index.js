@@ -1,43 +1,52 @@
 import React from "react";
 import Link from "next/link";
 import PropTypes from "prop-types";
+import ProductCardStyle from "./style";
 
 const ProductCard = (props) => {
-  const { slug, featureProduct, name, className } = props;
+  const { slug, featureProduct, name, onSlide } = props;
   return (
-    <div className={className}>
+    <ProductCardStyle style={{ margin: onSlide ? "50px 30px 0 30px" : "0" }}>
       <Link href="/products/[slug]" as={`/products/${slug}`}>
-        <a className="block relative h-72 md:h-72 xl:h-96 rounded overflow-hidden">
-          <img
-            alt={name}
-            className="object-cover object-center w-full h-full md:mx-auto block"
-            src={featureProduct.replace(
-              "//a.storyblok.com",
-              "//img2.storyblok.com/358x446/filters:quality(80):format(webp)"
-            )}
-          />
-        </a>
+        <div className="product-wrapper cursor-pointer block relative bg-old-lace border-8 border-old-lace hover:border-primary rounded-md">
+          <div className="product_image flex justify-center items-center">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcSet={featureProduct.replace(
+                  "//a.storyblok.com",
+                  "//img2.storyblok.com/0x300/filters:quality(80):format(webp)"
+                )}
+              />
+              <img
+                alt={name}
+                src={featureProduct.replace(
+                  "//a.storyblok.com",
+                  "//img2.storyblok.com/0x400/filters:quality(80):format(webp)"
+                )}
+              />
+            </picture>
+          </div>
+        </div>
       </Link>
-      <div className="mt-4">
-        <h2 className="text-2xl text-center font-medium">
-          <Link href="/products/[slug]" as={`/products/${slug}`}>
-            {name}
-          </Link>
-        </h2>
-      </div>
-    </div>
+      <h2 className="text-2xl font-medium text-center mt-4">
+        <Link href="/products/[slug]" as={`/products/${slug}`}>
+          {name}
+        </Link>
+      </h2>
+    </ProductCardStyle>
   );
 };
 
 ProductCard.propTypes = {
-  className: PropTypes.string,
   slug: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   featureProduct: PropTypes.string,
-  name: PropTypes.string.isRequired
+  onSlide: PropTypes.bool
 };
 
 ProductCard.defaultProps = {
-  className: "lg:w-1/3 md:w-1/2 p-4 w-full"
+  onSlide: false
 };
 
 export default ProductCard;

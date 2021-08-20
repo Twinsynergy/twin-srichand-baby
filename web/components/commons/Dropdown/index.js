@@ -65,7 +65,7 @@ class Dropdown extends Component {
                 } rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 z-10 flex flex-wrap w-full pt-2 content-center justify-between md:w-1/2 md:justify-end`}
                 role="menu">
                 {/* origin-top-right */}
-                <ul className="list-reset flex flex-wrap justify-between flex-1 md:flex-none items-center">
+                <ul className="list-reset list-none flex flex-wrap justify-between flex-1 md:flex-none items-center">
                   <li className="w-full md:w-auto md:mr-3">
                     <a
                       href="/about-us"
@@ -105,9 +105,9 @@ class Dropdown extends Component {
                   </li>
                   <li className="w-full md:w-auto md:mr-3">
                     <a
-                      href="/online-shop"
+                      href="/where-to-buy"
                       className={`block text-2xl px-4 py-2 text-sm hover:bg-gray-100 ${
-                        firstItem === "contact"
+                        Router.router.pathname === "/where-to-buy"
                           ? "text-primary active font-semibold"
                           : "text-grey-dark"
                       }`}>

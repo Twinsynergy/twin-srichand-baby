@@ -25,14 +25,9 @@ const BlogCard = (props) => {
           </a>
         </Link>
         <div className="py-6">
-          <h2 className="blog-title title-font text-2xl sm:text-3xl font-semibold text-gray-900">
-            {title}
-          </h2>
-          <p className="text-xl title-font font-light mb-3">
+          <h2 className="blog-title  text-2xl sm:text-3xl font-semibold text-gray-900">{title}</h2>
+          <p className="text-xl  font-light mb-3">
             โพสเมื่อวันที่ : {moment(published).format("DD/MM/YYYY")}
-          </p>
-          <p className="blog-subdesc text-xl font-light text-seccondary leading-relaxed mb-3">
-            {intro}
           </p>
         </div>
       </div>

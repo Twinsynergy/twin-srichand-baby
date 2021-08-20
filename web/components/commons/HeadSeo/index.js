@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
 
-const HeadSeo = ({ siteName, siteTitle, desc, imgSrc, siteUrl }) => {
+const HeadSeo = ({ siteName, siteTitle, desc, imgSrc, siteUrl, imgPreload }) => {
   return (
     <Head>
       <title>
@@ -30,6 +30,8 @@ const HeadSeo = ({ siteName, siteTitle, desc, imgSrc, siteUrl }) => {
       {/* Fav icon */}
       <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      {/* Image preload */}
+      <link rel="preload" as="image" href={imgPreload} />
     </Head>
   );
 };
@@ -39,6 +41,7 @@ HeadSeo.propTypes = {
   siteTitle: PropTypes.string,
   desc: PropTypes.string,
   imgSrc: PropTypes.string,
+  imgPreload: PropTypes.string,
   siteUrl: PropTypes.string
 };
 HeadSeo.defaultProps = {

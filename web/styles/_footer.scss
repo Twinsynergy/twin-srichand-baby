@@ -1,145 +1,154 @@
 /*===> Begin footer <===*/
+.page-home {
+  .footer-top {
+    background-color: #fff1f6;
+  }
+}
 footer {
-	position: relative;
-	.footer-top {
-		position: absolute;
-		// min-height: 500px;
-		padding: 160px 0 90px 0;
-		background-position: center center;
-		background-size: cover;
-		width: 100%;
-		top: -13%;
-		@media only screen and (min-width: 768px) {
-			padding: 160px 0 90px 0;
-			background-size: 100% 100%;
-			top: -30%;
-		}
-		@media only screen and (min-width: 1400px) {
-			padding: 220px 0 130px 0;
-			background-repeat: no-repeat;
-			background-size: 100% 100%;
-			top: -30%;
-		}
-		.container {
-			position: relative;
-			z-index: 1;
-		}
+  position: relative;
+  .footer-top {
+    background-size: cover;
+    width: 100%;
+    @media only screen and (max-width: 424px) {
+      height: 110px;
+    }
+    @media only screen and (min-width: 425px) {
+      height: 110px;
+      > div {
+        padding-top: 20px;
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      height: 200px;
+      > div {
+        padding-top: 30px;
+      }
+    }
+    @media only screen and (min-width: 1024px) {
+      height: 270px;
+      > div {
+        padding-top: 30px;
+      }
+    }
+    @media only screen and (min-width: 1280px) {
+      height: 350px;
+    }
+    @media only screen and (min-width: 1440px) {
+      height: 380px;
+      > div {
+        padding-top: 30px;
+      }
+    }
+    @media only screen and (min-width: 1920px) {
+      height: 500px;
+    }
+  }
+  .footer-bottom-wrap {
+    padding: 25px 0;
+    @apply bg-footer-srichand;
+    p {
+      margin-bottom: 0;
 
-		.logo {
-			margin-bottom: 30px;
+      a {
+        color: inherit;
 
-			&+p {
-				max-width: 320px;
-				margin-bottom: 30px;
-			}
-		}
-	}
-	.footer-bottom-wrap {
-		padding: 25px 0;
-		@apply bg-footer-srichand;
-		p {
-			margin-bottom: 0;
+        &:hover {
+          // color: $main_color;
+        }
+      }
+    }
 
-			a {
-				color: inherit;
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-				&:hover {
-					// color: $main_color;
-				}
-			}
-		}
+      .soc-link-wrap {
+        display: flex;
+        align-items: center;
 
-		.footer-bottom {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
+        p {
+          margin-bottom: 0;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
 
-			.soc-link-wrap {
-				display: flex;
-				align-items: center;
+  // @include breakpoint(small) {
+  // 	.footer-top {
+  // 		padding: 80px 0 50px;
+  // 		// background: url(../img/tablet_footer.svg) !important;
+  // 		background-size: cover !important;
+  // 		background-repeat: no-repeat;
+  // 	}
 
-				p {
-					margin-bottom: 0;
-					margin-right: 20px;
-				}
-			}
-		}
-	}
+  // 	.f-nav {
+  // 		li {
+  // 			a {
+  // 				font-size: 14px;
+  // 			}
+  // 		}
+  // 	}
 
-	// @include breakpoint(small) {
-	// 	.footer-top {
-	// 		padding: 80px 0 50px;
-	// 		// background: url(../img/tablet_footer.svg) !important;
-	// 		background-size: cover !important;
-	// 		background-repeat: no-repeat;
-	// 	}
+  // 	.f-subscribe, .f-nav {
+  // 		margin-bottom: 40px;
+  // 	}
 
-	// 	.f-nav {
-	// 		li {
-	// 			a {
-	// 				font-size: 14px;
-	// 			}
-	// 		}
-	// 	}
+  // 	.f-subscribe {
+  // 		display: flex;
+  // 		flex-direction: column;
+  // 		align-items: center;
 
-	// 	.f-subscribe, .f-nav {
-	// 		margin-bottom: 40px;
-	// 	}
+  // 		.logo+p {
+  // 			text-align: center;
+  // 			max-width: 510px;
+  // 			margin-bottom: 40px;
+  // 		}
+  // 	}
 
-	// 	.f-subscribe {
-	// 		display: flex;
-	// 		flex-direction: column;
-	// 		align-items: center;
+  // 	.footer-bottom-wrap {
+  // 		.footer-bottom {
+  // 			flex-direction: column;
 
-	// 		.logo+p {
-	// 			text-align: center;
-	// 			max-width: 510px;
-	// 			margin-bottom: 40px;
-	// 		}
-	// 	}
+  // 			p {
+  // 				text-align: center;
+  // 			}
 
-	// 	.footer-bottom-wrap {
-	// 		.footer-bottom {
-	// 			flex-direction: column;
+  // 			.soc-link-wrap {
+  // 				margin-top: 15px;
+  // 				p {
+  // 					display: none;
+  // 				}
+  // 			}
+  // 		}
+  // 	}
+  // }
 
-	// 			p {
-	// 				text-align: center;
-	// 			}
+  // @include breakpoint(mobile) {
+  // 	.footer-top {
+  // 		padding-top: 110px;
+  // 		padding-bottom: 80px;
+  // 	}
 
-	// 			.soc-link-wrap {
-	// 				margin-top: 15px;
-	// 				p {
-	// 					display: none;
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// }
+  // 	h4 {
+  // 		margin-bottom: 20px;
+  // 	}
 
-	// @include breakpoint(mobile) {
-	// 	.footer-top {
-	// 		padding-top: 110px;
-	// 		padding-bottom: 80px;
-	// 	}
+  // 	.f-nav {
+  // 		margin-bottom: 30px;
 
-	// 	h4 {
-	// 		margin-bottom: 20px;
-	// 	}
+  // 		li {
+  // 			a {
+  // 				font-size: 14px;
+  // 			}
+  // 		}
+  // 	}
 
-	// 	.f-nav {
-	// 		margin-bottom: 30px;
-
-	// 		li {
-	// 			a {
-	// 				font-size: 14px;
-	// 			}
-	// 		}
-	// 	}
-
-	// 	.signup-form {
-	// 		max-width: none;
-	// 		width: 100%;
-	// 	}
-	// }
+  // 	.signup-form {
+  // 		max-width: none;
+  // 		width: 100%;
+  // 	}
+  // }
 }
 /*===> End footer <===*/

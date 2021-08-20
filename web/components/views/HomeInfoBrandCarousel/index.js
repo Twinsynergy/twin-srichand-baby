@@ -30,61 +30,33 @@ function SamplePrevArrow(props) {
 }
 
 const settings = {
-  dots: true,
-  infinite: true,
+  infinite: false,
   speed: 500,
-  slidesToShow: 6,
-  slidesToScroll: 6,
+  lazyLoad: true,
+  variableWidth: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
   nextArrow: <SampleNextArrow />,
   prevArrow: <SamplePrevArrow />,
   responsive: [
     {
-      breakpoint: 1300,
+      breakpoint: 769,
       settings: {
-        slidesToShow: 6,
-        slidesToScroll: 6,
-        dots: true
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false
       }
     },
     {
-      breakpoint: 1200,
+      breakpoint: 426,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 1000,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 800,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        initialSlide: 3,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 736,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 568,
-      settings: {
+        centerMode: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: false
+        dots: true,
+        arrows: false
       }
     }
   ]
@@ -93,20 +65,21 @@ const settings = {
 const HomeInfoBrandCarousel = ({ slideValues }) => {
   return (
     <div className="wave-block">
-      <div className="partner container mx-auto px-5 md:pb-10 text-center">
-        <h2 className="mb-4">
-          เชื่อมั่นในเรา <span className="whitespace-nowrap">Srichand Baby</span>
+      <div className="partner container mx-auto px-5 pb-20 text-center">
+        <h2 className="mb-4 md:text-4xl text-2xl">
+          เชื่อมั่นในเรา ผลิตภัณฑ์จาก SRICHAND Baby <br />
+          เราได้รับการรับรองผลิตภัณฑ์จาก
         </h2>
-        <Slider {...settings}>
-          {slideValues.map((item, k) => (
-            <figure
-              className="w-full overflow-hidden relative z-10 align-middle"
-              key={k.toString()}>
-              <img src={item.image} className="mx-auto pointer-events-none" alt={item.title} />
-              <figcaption className="hidden">{item.title}</figcaption>
-            </figure>
-          ))}
-        </Slider>
+        <div className="xl:w-7/12 lg:w-10/12 mx-auto">
+          <Slider {...settings}>
+            {slideValues.map((item, k) => (
+              <figure key={k.toString()}>
+                <img src={item.image} className="mx-auto" alt={item.title} />
+                <figcaption className="hidden">{item.title}</figcaption>
+              </figure>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );
