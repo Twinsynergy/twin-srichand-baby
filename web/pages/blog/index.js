@@ -13,7 +13,6 @@ const Blog = (props) => {
         siteTitle="Blog"
         desc="ข่าวสารและเกร็คความรู้การใช้ผลิตภัณฑ์สำหรับเด็กเล็ก"
         siteUrl="https://srichandbaby.twinsynergy.co.th/blog"
-        imgSrc="https://srichandbaby.twinsynergy.co.th/assets/image/banner-polygon.webp"
         imgPreload="/assets/image/banner-polygon.webp"
       />
       <Layout>

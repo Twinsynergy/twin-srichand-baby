@@ -1,13 +1,14 @@
 /* eslint-disable no-console */
-import React, { useState, useEffect } from "react";
-import SbEditable from "storyblok-react";
-import { render } from "storyblok-rich-text-react-renderer";
-import { useRouter } from "next/router";
-import { Breadcrumb } from "@/components/commons";
-import { SingleProductCarousel } from "@/components/views";
-import styled from "styled-components";
+import React, { useEffect, useState } from "react";
+
 import ActiveinGredients from "./ActiveinGredients";
+import { Breadcrumb } from "@/components/commons";
 import ProductCertificate from "./ProductCertificate";
+import SbEditable from "storyblok-react";
+import { SingleProductCarousel } from "@/components/views";
+import { render } from "storyblok-rich-text-react-renderer";
+import styled from "styled-components";
+import { useRouter } from "next/router";
 
 const RichTextBlock = styled.div`
   p {
@@ -126,12 +127,12 @@ const SingleProduct = ({ blok, routes }) => {
           </div>
         </ProductCertificate>
       )}
-      <div className="product-description">
+      <div className="product-description mb-14">
         <div className="container mx-auto px-5">
           <div className="grid grid-cols-1 lg:grid-cols-5">
             <div className="lg:col-span-2 flex justify-center">
               <img
-                className="w-full md:w-1/2 lg:w-3/4 object-cover object-center"
+                style={{maxHeight: '400px'}}
                 alt={blok.feature_product.alt ? blok.feature_product.alt : blok.title}
                 src={blok.feature_product.filename.replace(
                   "//a.storyblok.com",
@@ -146,6 +147,10 @@ const SingleProduct = ({ blok, routes }) => {
               <div className="product-description-content text-ingredients-secondary">
                 <RichTextBlock>{render(blok.description)}</RichTextBlock>
               </div>
+              {blok.text_highlight && (
+                <div className="bg-old-lace p-4 text-secondary rounded-xl text-center"> {blok.text_highlight}</div>
+              )}
+              
             </div>
           </div>
         </div>

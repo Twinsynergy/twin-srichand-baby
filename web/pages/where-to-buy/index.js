@@ -33,7 +33,6 @@ const WhereToBuy = () => {
         siteTitle="Where to buy"
         desc="สั่งซื้อซื้อสินค้าได้ที่ไหนบ้าง"
         siteUrl="https://srichandbaby.twinsynergy.co.th/where-to-buy"
-        imgSrc="https://srichandbaby.twinsynergy.co.th/assets/image/banner-polygon.webp"
         imgPreload="/assets/image/banner-polygon.webp"
       />
       <Layout>
